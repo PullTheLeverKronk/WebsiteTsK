@@ -1,0 +1,172 @@
+<html>
+	<head>
+		<title>Website1.</title>
+		<link rel="stylesheet" href="website1.1.css"/>
+
+	<script>	
+/*NavBar*/
+/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar 
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}*/
+
+
+    function myFunction() {
+  // Get the snackbar DIV
+  var x = document.getElementById("snackbar");
+
+  // Add the "show" class to DIV
+  x.className = "show";
+
+  // After 3 seconds, remove the show class from DIV
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}   
+</script>
+        
+        
+<body>
+        <!--This is the Navbar-->
+	<div id="navbar">
+		<a href="#home">Home</a>
+		<a href="#news">News</a>
+		<a href="#contact">Contact</a>
+	</div>
+    
+    
+ <!--This is the logo-->
+<div id="logo" >
+			
+	<img src="website logo2.png" style="width:75%">
+			
+			
+	</div>
+    <div id="bannerimage">
+    <div id="headtext">
+       <h1>Fantasy</h1>
+    </div>    
+    </div>
+    
+<!-- cards-->    
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="jrrtolkein.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Beren and Luthien</h2>
+        <p class="title">J.R.R. Tolkein</p>
+        <p>24.99</p>
+          <div id="snackbar">Purchase Successful</div>
+        <p><button onclick="myFunction()" class="button">Buy Now</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="northernlights.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Northern Lights</h2>
+        <p class="title">Phillip Pullman</p>
+        <p>18.99</p>
+         <div id="snackbar">Purchase Successful</div>
+        <p><button onclick="myFunction()" class="button">Buy Now</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="terrypratchett.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>The Colour of Magic</h2>
+        <p class="title">Terry Pratchett</p>
+        <p>15.70</p>
+        <div id="snackbar">Purchase Successful</div>
+        <p><button onclick="myFunction()" class="button">Buy Now</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+    
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="eotworld.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Eye of the World</h2>
+        <p class="title">Robert Jordan</p>
+        <p>13.00</p>
+        <div id="snackbar">Purchase Successful</div>
+        <p><button onclick="myFunction()" class="button">Buy Now</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="harryppic.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>The Philosophers stone</h2>
+        <p class="title">J.K. Rowling</p>
+          <p>25.99</p>
+        <div id="snackbar">Purchase Successful</div>
+        <p><button onclick="myFunction()" class="button">Buy Now</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="4powers.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>The 4 Powers of Daren Saner</h2>
+        <p class="title">Michael Oehley</p>
+        <p>7.99</p>
+        <div id="snackbar">Purchase Successful</div>
+        <p><button onclick="myFunction()" class="button">Buy Now</button></p>
+      </div>
+    </div>
+  </div>
+</div>    
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+</body>
+        
+        <div id="contact">
+</div>
+        
+        <footer>
+<div id="cinfo">
+	<div id="foot">
+	<h3>Contact Us</h3>
+	<p>ph: 0800-2277-788-44</p>
+		<img src="logo.png" id="footerimage">
+    <p>Instagram - @Look...Books</p>
+
+
+
+
+	</div>
+</div>
+</footer>

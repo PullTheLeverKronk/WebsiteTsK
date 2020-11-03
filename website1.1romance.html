@@ -1,0 +1,171 @@
+<html>
+	<head>
+		<title>Website1.</title>
+		<link rel="stylesheet" href="website1.1.css"/>
+
+	<script>	
+/*NavBar*/
+/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar 
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}*/
+
+
+         function myFunction() {
+  // Get the snackbar DIV
+  var x = document.getElementById("snackbar");
+
+  // Add the "show" class to DIV
+  x.className = "show";
+
+  // After 3 seconds, remove the show class from DIV
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}   
+</script>
+        
+        
+<body>
+        <!--This is the Navbar-->
+	<div id="navbar">
+		<a href="#home">Home</a>
+		<a href="#news">News</a>
+		<a href="#contact">Contact</a>
+	</div>
+    
+    
+ <!--This is the logo-->
+<div id="logo" >
+			
+	<img src="website logo2.png" style="width:75%">
+			
+			
+	</div>
+    <div id="bannerimage">
+    <div id="headtext">
+       <h1>Romance</h1>
+    </div>    
+    </div>
+    
+<!-- cards-->    
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="lippy.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Got You Back</h2>
+        <p class="title">Jane Fallon</p>
+        <p>5.99</p>
+        <div id="snackbar">Purchase Successful</div>
+        <p><button onclick="myFunction()" class="button">Buy Now</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="ewalker.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>The Snow Tree</h2>
+        <p class="title">Elizabeth Walker</p>
+        <p>14.50</p>
+       <div id="snackbar">Purchase Successful</div>
+        <p><button onclick="myFunction()" class="button">Buy Now</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="allchange.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>All Change</h2>
+        <p class="title">Elizabeth Jane Howard</p>
+        <p>16.80</p>
+                <div id="snackbar">Purchase Successful</div>
+        <p><button onclick="myFunction()" class="button">Buy Now</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+    
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="ngl.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>No Greater Love</h2>
+        <p class="title">Danielle Steele</p>
+        <p>2.50</p>
+        <div id="snackbar">Purchase Successful</div>
+        <p><button onclick="myFunction()" class="button">Buy Now</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="prov.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>A Year in Provence</h2>
+        <p class="title">Peter Mayle</p>
+          <div id="snackbar">Purchase Successful</div>
+        <p><button onclick="myFunction()" class="button">Buy Now</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="tkam.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>To Kill a Mockingbird</h2>
+        <p class="title">Harper Lee</p>
+        <p>7.99</p>
+        <div id="snackbar">Purchase Successful</div>
+        <p><button onclick="myFunction()" class="button">Buy Now</button></p>
+      </div>
+    </div>
+  </div>
+</div>    
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+</body>
+        
+        <div id="contact">
+</div>
+        
+        <footer>
+<div id="cinfo">
+	<div id="foot">
+	<h3>Contact Us</h3>
+	<p>ph: 0800-2277-788-44</p>
+		<img src="logo.png" id="footerimage">
+    <p>Instagram - @Look...Books</p>
+
+
+
+
+	</div>
+</div>
+</footer>
